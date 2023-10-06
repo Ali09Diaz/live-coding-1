@@ -1,6 +1,8 @@
 // Escribe tu código aquí.
 
 
+//Actividad 1 
+
   const arrayNombres=["Alicia", "Gustavo", "Roy", "Lalo", "Monica", "Alfredo", "Itachi" ];  //Elementos de mi arreglo 
 
   const letras = "Lili"; //Nombre de persona que quiero usar para comparar el numero de letras, con las de los nombres de mi arreglo
@@ -9,6 +11,7 @@
 
   console.log(newArray); //"Alicia", "Gustavo", "Monica", "Alfredo", "Itachi"
 
+  
   /*
   FEEDBACK de la actividad
 
@@ -19,6 +22,16 @@
   - te falto realizar un cuerpo para la resolución del problema, algun loop. o explicar al entrevistador de que manería resolverías el problema desde el inicio, asi si te vuelve a pasar lo del internet los dejas con la impresion de que tenías idea de como resolverlo
   
   */
+
   
+  //Actividad 2 
+  
+  const lista = document.querySelector('#miLista') //Selecciono en el DOM la parte que quiero modificar
+  
+  arrayNombres.forEach((element) => {    //Con e array que tengo de la actividad 1, le aplicamos el metodo .forEach y que seleccione cada elemento 
+      const nuevaLista = document.createElement("LI"); //Crea una <li></li>
+      nuevaLista.textContent = element;
+      lista.appendChild(nuevaLista); //Agrega un hijo de lista con cada elemento de nuestro arreglo 
+  })
 
 
